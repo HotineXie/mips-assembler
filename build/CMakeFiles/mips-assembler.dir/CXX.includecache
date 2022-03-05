@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/parser.h
+
+../include/scanner.h
+fstream
+-
+string
+-
+vector
+-
+map
+-
+
+/home/hotine/work/mips-assembler/src/main.cc
+scanner.h
+/home/hotine/work/mips-assembler/src/scanner.h
+parser.h
+/home/hotine/work/mips-assembler/src/parser.h
+iostream
+-
+fstream
+-
+vector
+-
+map
+-
+
+/home/hotine/work/mips-assembler/src/scanner.cc
+scanner.h
+/home/hotine/work/mips-assembler/src/scanner.h
+iostream
+-
+
