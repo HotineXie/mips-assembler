@@ -9,10 +9,6 @@
 ../include/parser.h
 string
 -
-
-/home/hotine/work/mips-assembler/src/parser.cc
-parser.h
-/home/hotine/work/mips-assembler/src/parser.h
 map
 -
 iostream
@@ -23,4 +19,8 @@ bitset
 -
 regex
 -
+
+/home/hotine/work/mips-assembler/src/parser.cc
+parser.h
+/home/hotine/work/mips-assembler/src/parser.h
 

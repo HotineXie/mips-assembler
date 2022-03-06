@@ -123,33 +123,6 @@ mips-assembler/fast:
 	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/build
 .PHONY : mips-assembler/fast
 
-src/main.o: src/main.cc.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cc.o:
-	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/main.cc.o
-.PHONY : src/main.cc.o
-
-src/main.i: src/main.cc.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cc.i:
-	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/main.cc.i
-.PHONY : src/main.cc.i
-
-src/main.s: src/main.cc.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cc.s:
-	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/main.cc.s
-.PHONY : src/main.cc.s
-
 src/parser.o: src/parser.cc.o
 
 .PHONY : src/parser.o
@@ -204,6 +177,33 @@ src/scanner.cc.s:
 	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/scanner.cc.s
 .PHONY : src/scanner.cc.s
 
+src/tester.o: src/tester.cc.o
+
+.PHONY : src/tester.o
+
+# target to build an object file
+src/tester.cc.o:
+	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/tester.cc.o
+.PHONY : src/tester.cc.o
+
+src/tester.i: src/tester.cc.i
+
+.PHONY : src/tester.i
+
+# target to preprocess a source file
+src/tester.cc.i:
+	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/tester.cc.i
+.PHONY : src/tester.cc.i
+
+src/tester.s: src/tester.cc.s
+
+.PHONY : src/tester.s
+
+# target to generate assembly for a file
+src/tester.cc.s:
+	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/tester.cc.s
+.PHONY : src/tester.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... mips-assembler"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/parser.o"
 	@echo "... src/parser.i"
 	@echo "... src/parser.s"
 	@echo "... src/scanner.o"
 	@echo "... src/scanner.i"
 	@echo "... src/scanner.s"
+	@echo "... src/tester.o"
+	@echo "... src/tester.i"
+	@echo "... src/tester.s"
 .PHONY : help
 
 

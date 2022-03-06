@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/mips-assembler.dir/src/main.cc.o CMakeFiles/mips-assembler.dir/src/scanner.cc.o CMakeFiles/mips-assembler.dir/src/parser.cc.o  -o mips-assembler 
+/usr/bin/c++     CMakeFiles/mips-assembler.dir/src/tester.cc.o CMakeFiles/mips-assembler.dir/src/scanner.cc.o CMakeFiles/mips-assembler.dir/src/parser.cc.o  -o mips-assembler 

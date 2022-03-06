@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hotine/work/mips-assembler/src/main.cc" "/home/hotine/work/mips-assembler/build/CMakeFiles/mips-assembler.dir/src/main.cc.o"
   "/home/hotine/work/mips-assembler/src/parser.cc" "/home/hotine/work/mips-assembler/build/CMakeFiles/mips-assembler.dir/src/parser.cc.o"
   "/home/hotine/work/mips-assembler/src/scanner.cc" "/home/hotine/work/mips-assembler/build/CMakeFiles/mips-assembler.dir/src/scanner.cc.o"
+  "/home/hotine/work/mips-assembler/src/tester.cc" "/home/hotine/work/mips-assembler/build/CMakeFiles/mips-assembler.dir/src/tester.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mips-assembler.dir/src/main.cc.o"
   "CMakeFiles/mips-assembler.dir/src/parser.cc.o"
   "CMakeFiles/mips-assembler.dir/src/scanner.cc.o"
+  "CMakeFiles/mips-assembler.dir/src/tester.cc.o"
   "mips-assembler"
   "mips-assembler.pdb"
 )

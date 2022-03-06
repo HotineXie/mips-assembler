@@ -1,19 +1,39 @@
 #include "scanner.h"
-#include <iostream>
 
 std::map<std::string, int> labelStorage;
 std::vector<std::vector<std::string>> pureCodes;
 bool start_text = false;
 
-void read_line(std::string current) {
+bool Scanner::is_token_empty(char currentChar) {
+  if (currentChar == ' ' || currentChar == '\t') {
+    return true;
+  }
+  return false;
+}
+
+bool Scanner::is_token_end(char currentChar) {
+  if (Scanner::is_token_empty(currentChar) || currentChar == '\t' || currentChar == ',' || currentChar == '\0') {
+    return true;
+  }
+  return false;
+}
+
+bool Scanner::annotation_start(char currentChar) {
+  if (currentChar == '#') {
+    return true;
+  }
+  return false;
+}
+
+void Scanner::read_line(std::string current) {
   std::vector<std::string> codeInLine;
   std::string token = "";
   for (int i=0;i<current.size();i++) {
     if (token == "") {
-      if (is_empty(current[i])) {
+      if (Scanner::is_token_empty(current[i])) {
         continue;
       }
-      else if (annotation_start(current[i])) {
+      else if (Scanner::annotation_start(current[i])) {
         break;
       }
       else {
@@ -30,10 +50,10 @@ void read_line(std::string current) {
         token = "";
         continue;
       }
-      if (annotation_start(current[i])) {
+      if (Scanner::annotation_start(current[i])) {
         break;
       }
-      else if (is_token_end(current[i])) {
+      else if (Scanner::is_token_end(current[i])) {
         codeInLine.push_back(token);
         token = "";
       }
@@ -56,26 +76,4 @@ void read_line(std::string current) {
       }
     }
   }
-
-}
-
-bool is_empty(char currentChar) {
-  if (currentChar == ' ' || currentChar == '\t') {
-    return true;
-  }
-  return false;
-}
-
-bool is_token_end(char currentChar) {
-  if (is_empty(currentChar) || currentChar == '\t' || currentChar == ',' || currentChar == '\0') {
-    return true;
-  }
-  return false;
-}
-
-bool annotation_start(char currentChar) {
-  if (currentChar == '#') {
-    return true;
-  }
-  return false;
 }

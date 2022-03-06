@@ -57,18 +57,18 @@ include CMakeFiles/mips-assembler.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mips-assembler.dir/flags.make
 
-CMakeFiles/mips-assembler.dir/src/main.cc.o: CMakeFiles/mips-assembler.dir/flags.make
-CMakeFiles/mips-assembler.dir/src/main.cc.o: ../src/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hotine/work/mips-assembler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mips-assembler.dir/src/main.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mips-assembler.dir/src/main.cc.o -c /home/hotine/work/mips-assembler/src/main.cc
+CMakeFiles/mips-assembler.dir/src/tester.cc.o: CMakeFiles/mips-assembler.dir/flags.make
+CMakeFiles/mips-assembler.dir/src/tester.cc.o: ../src/tester.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hotine/work/mips-assembler/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mips-assembler.dir/src/tester.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mips-assembler.dir/src/tester.cc.o -c /home/hotine/work/mips-assembler/src/tester.cc
 
-CMakeFiles/mips-assembler.dir/src/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mips-assembler.dir/src/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hotine/work/mips-assembler/src/main.cc > CMakeFiles/mips-assembler.dir/src/main.cc.i
+CMakeFiles/mips-assembler.dir/src/tester.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mips-assembler.dir/src/tester.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hotine/work/mips-assembler/src/tester.cc > CMakeFiles/mips-assembler.dir/src/tester.cc.i
 
-CMakeFiles/mips-assembler.dir/src/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mips-assembler.dir/src/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hotine/work/mips-assembler/src/main.cc -o CMakeFiles/mips-assembler.dir/src/main.cc.s
+CMakeFiles/mips-assembler.dir/src/tester.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mips-assembler.dir/src/tester.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hotine/work/mips-assembler/src/tester.cc -o CMakeFiles/mips-assembler.dir/src/tester.cc.s
 
 CMakeFiles/mips-assembler.dir/src/scanner.cc.o: CMakeFiles/mips-assembler.dir/flags.make
 CMakeFiles/mips-assembler.dir/src/scanner.cc.o: ../src/scanner.cc
@@ -98,14 +98,14 @@ CMakeFiles/mips-assembler.dir/src/parser.cc.s: cmake_force
 
 # Object files for target mips-assembler
 mips__assembler_OBJECTS = \
-"CMakeFiles/mips-assembler.dir/src/main.cc.o" \
+"CMakeFiles/mips-assembler.dir/src/tester.cc.o" \
 "CMakeFiles/mips-assembler.dir/src/scanner.cc.o" \
 "CMakeFiles/mips-assembler.dir/src/parser.cc.o"
 
 # External object files for target mips-assembler
 mips__assembler_EXTERNAL_OBJECTS =
 
-mips-assembler: CMakeFiles/mips-assembler.dir/src/main.cc.o
+mips-assembler: CMakeFiles/mips-assembler.dir/src/tester.cc.o
 mips-assembler: CMakeFiles/mips-assembler.dir/src/scanner.cc.o
 mips-assembler: CMakeFiles/mips-assembler.dir/src/parser.cc.o
 mips-assembler: CMakeFiles/mips-assembler.dir/build.make
