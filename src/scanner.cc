@@ -18,6 +18,9 @@ void read_line(std::string current) {
       }
       else {
         token = token + current[i];
+        if (i == current.size()-1) {
+          codeInLine.push_back(token);
+        }
       }
     } // have NOT start to write to token
 

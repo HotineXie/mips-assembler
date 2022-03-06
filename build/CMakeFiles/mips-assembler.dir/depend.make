@@ -5,6 +5,9 @@ CMakeFiles/mips-assembler.dir/src/main.cc.o: ../include/parser.h
 CMakeFiles/mips-assembler.dir/src/main.cc.o: ../include/scanner.h
 CMakeFiles/mips-assembler.dir/src/main.cc.o: ../src/main.cc
 
+CMakeFiles/mips-assembler.dir/src/parser.cc.o: ../include/parser.h
+CMakeFiles/mips-assembler.dir/src/parser.cc.o: ../src/parser.cc
+
 CMakeFiles/mips-assembler.dir/src/scanner.cc.o: ../include/scanner.h
 CMakeFiles/mips-assembler.dir/src/scanner.cc.o: ../src/scanner.cc
 

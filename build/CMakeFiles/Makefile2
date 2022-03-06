@@ -74,12 +74,12 @@ clean: CMakeFiles/mips-assembler.dir/clean
 CMakeFiles/mips-assembler.dir/all:
 	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/depend
 	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hotine/work/mips-assembler/build/CMakeFiles --progress-num=1,2,3 "Built target mips-assembler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hotine/work/mips-assembler/build/CMakeFiles --progress-num=1,2,3,4 "Built target mips-assembler"
 .PHONY : CMakeFiles/mips-assembler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mips-assembler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hotine/work/mips-assembler/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hotine/work/mips-assembler/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mips-assembler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hotine/work/mips-assembler/build/CMakeFiles 0
 .PHONY : CMakeFiles/mips-assembler.dir/rule

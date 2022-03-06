@@ -150,6 +150,33 @@ src/main.cc.s:
 	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/parser.o: src/parser.cc.o
+
+.PHONY : src/parser.o
+
+# target to build an object file
+src/parser.cc.o:
+	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/parser.cc.o
+.PHONY : src/parser.cc.o
+
+src/parser.i: src/parser.cc.i
+
+.PHONY : src/parser.i
+
+# target to preprocess a source file
+src/parser.cc.i:
+	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/parser.cc.i
+.PHONY : src/parser.cc.i
+
+src/parser.s: src/parser.cc.s
+
+.PHONY : src/parser.s
+
+# target to generate assembly for a file
+src/parser.cc.s:
+	$(MAKE) -f CMakeFiles/mips-assembler.dir/build.make CMakeFiles/mips-assembler.dir/src/parser.cc.s
+.PHONY : src/parser.cc.s
+
 src/scanner.o: src/scanner.cc.o
 
 .PHONY : src/scanner.o
@@ -189,6 +216,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser.o"
+	@echo "... src/parser.i"
+	@echo "... src/parser.s"
 	@echo "... src/scanner.o"
 	@echo "... src/scanner.i"
 	@echo "... src/scanner.s"

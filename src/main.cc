@@ -18,13 +18,14 @@ int main(int agrc, char** agrv) {
     read_line(current);
   }
 
-  for (int i=0;i<pureCodes.size();i++) {
-    for (int j=0;j<pureCodes[i].size();j++) {
-      std::cout << pureCodes[i][j] << " | ";
-    }
-    std::cout << std::endl;
-  }
-  std::cout << labelStorage["fibonacciExit"] << std::endl;
+  // for (int i=0;i<pureCodes.size();i++) {
+  //   for (int j=0;j<pureCodes[i].size();j++) {
+  //     std::cout << pureCodes[i][j] << " | ";
+  //   }
+  //   std::cout << std::endl;
+  // }
+
+  binCode << parse_pure_code();
 
   return 0;
 }
